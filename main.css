@@ -8,12 +8,14 @@
 }
 
 ul{
+  width: 100%;
   position: fixed; 
   background: white;
   text-align: center;
 }
 
 nav {
+  width: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -32,13 +34,14 @@ nav ul {
 }
 
 ul {
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li a {
+ li a {
   font-size: 20px;
   font-weight: 500;
   color: black;
@@ -48,12 +51,22 @@ nav a:hover {
   color: greenyellow;
 }
 
-.HOME {
+.home {
   width: 100%;
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.img-contant{
+  width: 50%;
+}
+
+.img-contant img{
+  width: 100%;
+  height: 680px;
 }
 
 .text-contant {
@@ -295,4 +308,284 @@ textarea {
   display: inline-block;
   align-items: center;
   justify-content: space-around;
+  }
+
+  @media (max-width: 412px) {
+    body{
+      padding: 0;
+    }
+    ul{
+      text-align: center;
+    }
+    
+    nav {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    
+    nav ul {
+      width: 100%;
+      height: 65px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a:hover {
+      color: greenyellow;
+    }
+    
+    .home {
+      width: 100%;
+      height: 675px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      /* justify-content: space-around; */
+    }
+    
+ 
+    
+    .text1 {
+      font-size: 55px;
+      font-weight: 100;
+      color: white;
+    }
+    
+    .text2 {
+      font-size: 50px;
+      font-weight: 700;
+      color: white;
+    }
+    
+    .text3 {
+      font-size: 17px;
+      color: grey;
+    }
+    
+    .img-contant img {
+      width: 700px;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    body {
+      background-color: #333;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .portfolio {
+      margin: 50px 0;
+    }
+    .portfolio-title {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    .portfolio-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .portfolio-wrapper .portfolio-item {
+      width: 30%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .portfolio-item a:hover {
+      color: yellowgreen;
+    }
+    
+    
+    .PROTFOLIE h1 {
+      text-align: center;
+      font-size: 17px;
+      color: white;
+    }
+    .PROTFOLIE span:hover{
+      color: greenyellow;
+    }
+    
+    
+    .PROTFOLIE .h4 h4{
+      padding: 0px;
+      display: inline;
+      font-size: 35px;
+      color: white;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .img1 img {
+      margin: 15px;
+      width: 100%;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .img1 span {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    .ABOUT {
+      padding: 50px;
+      width: 100%;
+      background-color: rgb(44, 44, 44);
+      gap: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text h1{
+      font-size: 30px;
+      color: white;
+    }
+    .ABOUT h1 {
+      color: white;
+      font-size: 35px;
+    }
+    
+    .ABOUT p {
+      color: grey;
+      font-size: 16px;
+    }
+    
+    .button button {
+      box-shadow: 0 0 5px green, 0 0 25px green;
+      width: 180px;
+      height: 50px;
+      background-color: green;
+      border-radius: 30px;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .button button:hover {
+      box-shadow: 0 0 5px green,
+        0 0 25px green, 0 0 50px green,
+        0 0 100px green, 0 0 200px green;
+    
+    }
+    
+    .CONTANT {
+      padding: 20px;
+      width: 100%;
+      gap: 20px;
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .CONTANT h1 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+    }
+    
+    .h1 h1 {
+      padding: 10px;
+      width: 100%;
+      font-size: 40px;
+      color: white;
+      background-color: rgb(44, 44, 44);
+    }
+    
+    input {
+      width: 500px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(75, 75, 75);
+    }
+    
+    textarea {
+      background-color: rgb(75, 75, 75);
+    }
+    
+    .button button {
+      box-shadow: 0 0 5px green, 0 0 25px green;
+      width: 140px;
+      height: 40px;
+      background-color: green;
+      border-radius: 30px;
+    }
+    
+    .button button:hover {
+      box-shadow: 0 0 5px green,
+        0 0 25px green, 0 0 50px green,
+        0 0 100px green, 0 0 200px green;
+    
+    }
+    
+    .text-numb {
+      margin: 20px;
+      padding: 20px;
+      margin-bottom: 5%;
+      margin-right: 7%;
+      display: block;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .text-numb span h3 {
+      font-size: 20px;
+      color: blue;
+    }
+    
+    .text-numb span p{
+      font-size: 15px;
+      color: white;
+    }
+    
+    .text-numb span p:hover {
+      color: greenyellow;
+    }
+    
+    .CONTANT h4 {
+      font-size: 40px;
+      color: white;
+    }
+    
+    .h1 h1{ 
+      padding: 20px;
+      margin-left: 37%;
+      font-size: 35px;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    
+    .form-ed {
+      padding: 40px;
+      display: inline-block;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      }
   }
