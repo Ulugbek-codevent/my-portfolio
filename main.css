@@ -324,18 +324,18 @@ section {
   }
   
   .header-info span {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 300;
   }
   
   .header-info h1 {
-    font-size: 70px;
+    font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
   }
   
   .header-info p {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
 
   }
