@@ -1,591 +1,525 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
+  outline: none;
 }
 
-ul{
+body{
+  margin: 0  20px;
   width: 100%;
-  position: fixed; 
-  background: white;
+  height: 100%;
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  padding: 5px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/header/header-bg.webp");
+  background-size: cover;
+  background-position: left;
+  margin-top: 70px;
+  color: #fff;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-wrapper .header-info {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.header-info span {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.header-info h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header-info p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.header-wrapper .header-img {
+  width: 50%;
+  height: 90vh;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.portfolio-wrapper .portfolio-item {
+  width: 30%;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-nav {
+.portfolio-item h3 {
+  font-size: 17px;
+}
+
+.portfolio-item h3 a{
+  font-size: 12px;
+}
+
+.portfolio-item img {
+  border-radius: 10px;
   width: 100%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
 }
 
-nav ul {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-ul {
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
- li a {
-  font-size: 20px;
-  font-weight: 500;
-  color: black;
-}
-
-nav a:hover {
+.portfolio-item a:hover {
   color: greenyellow;
 }
 
-.home {
-  width: 100%;
-  background-color: black;
+.about {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
 }
 
-.img-contant{
-  width: 50%;
+.about-img {
+  width: 55%;
 }
 
-.img-contant img{
+.about-img img {
   width: 100%;
-  height: 680px;
 }
 
-.text-contant {
+.about-info {
+  width: 45%;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.about-info h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#contact h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.contact-wrapper {
   display: flex;
-
+  justify-content: space-between;
 }
 
-.text1 {
-  font-size: 55px;
-  font-weight: 100;
-  color: white;
+.contact-wrapper .contact-form {
+  width: 60%;
+  margin-right: 50px;
 }
 
-.text2 {
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
+.contact-form h3 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
-.text3 {
-  font-size: 17px;
-  color: grey;
+.contact-form input:not(.btn),
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  background-color: rgb(93, 93, 153);
+  border: none;
+  margin-bottom: 16px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.img-contant img {
-  width: 700px;
+.contact-form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+.contact-form .btn {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+
+.contact-wrapper .contact-details {
+  width: 40%;
+}
+
+.contact-details h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.details-wrapper span {
+  color: #124374;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.details-wrapper a {
+  margin-bottom: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.details-wrapper a:hover {
+  color: greenyellow;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
 }
+
+ul li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
-  color: inherit;
-}
-body {
-  background-color: #333;
   color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.portfolio {
-  margin: 50px 0;
-}
-.portfolio-title {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.portfolio-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.portfolio-wrapper .portfolio-item {
-  width: 30%;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.portfolio-item img {
-  width: 100%;
-  border-radius: 10px;
-}
-.portfolio-item a:hover {
-  color: yellowgreen;
+
+section {
+  padding: 80px 0;
 }
 
 
-.PROTFOLIE h1 {
-  text-align: center;
-  font-size: 17px;
-  color: white;
-}
-.PROTFOLIE span:hover{
-  color: greenyellow;
-}
 
-
-.PROTFOLIE .h4 h4{
-  padding: 0px;
-  display: inline;
-  font-size: 35px;
-  color: white;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.img1 img {
-  margin: 15px;
-  width: 100%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.img1 span {
-  color: white;
-  font-size: 15px;
-  text-align: center;
-}
-
-.ABOUT {
-  padding: 50px;
-  width: 100%;
-  background-color: rgb(44, 44, 44);
-  gap: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.text h1{
-  font-size: 30px;
-  color: white;
-}
-.ABOUT h1 {
-  color: white;
-  font-size: 35px;
-}
-
-.ABOUT p {
-  color: grey;
-  font-size: 16px;
-}
-
-.button button {
-  box-shadow: 0 0 5px green, 0 0 25px green;
-  width: 180px;
-  height: 50px;
-  background-color: green;
-  border-radius: 30px;
-  cursor: pointer;
-  border: none;
-}
-
-.button button:hover {
-  box-shadow: 0 0 5px green,
-    0 0 25px green, 0 0 50px green,
-    0 0 100px green, 0 0 200px green;
-
-}
-
-.CONTANT {
-  padding: 20px;
-  width: 100%;
-  gap: 20px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.CONTANT h1 {
-  font-size: 40px;
-  color: white;
-  text-align: center;
-}
-
-.h1 h1 {
-  padding: 10px;
-  width: 100%;
-  font-size: 40px;
-  color: white;
-  background-color: rgb(44, 44, 44);
-}
-
-input {
-  width: 500px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(75, 75, 75);
-}
-
-textarea {
-  background-color: rgb(75, 75, 75);
-}
-
-.button button {
-  box-shadow: 0 0 5px green, 0 0 25px green;
-  width: 140px;
-  height: 40px;
-  background-color: green;
-  border-radius: 30px;
-}
-
-.button button:hover {
-  box-shadow: 0 0 5px green,
-    0 0 25px green, 0 0 50px green,
-    0 0 100px green, 0 0 200px green;
-
-}
-
-.text-numb {
-  margin: 20px;
-  padding: 20px;
-  margin-bottom: 5%;
-  margin-right: 7%;
-  display: block;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.text-numb span h3 {
-  font-size: 20px;
-  color: blue;
-}
-
-.text-numb span p{
-  font-size: 15px;
-  color: white;
-}
-
-.text-numb span p:hover {
-  color: greenyellow;
-}
-
-.CONTANT h4 {
-  font-size: 40px;
-  color: white;
-}
-
-.h1 h1{ 
-  padding: 20px;
-  margin-left: 37%;
-  font-size: 35px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.form-ed form{
-  padding: 40px;
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  padding: 12px 24px;
   display: inline-block;
-  align-items: center;
-  justify-content: space-around;
-  }
+  margin-top: 30px;
+  transition: .3s;
+  color: #fff;
+}
 
-  @media (max-width: 412px) {
-    body{
-      padding: 0;
-    }
-    ul{
-      text-align: center;
-    }
-    
-    nav {
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: row;
-    }
-    
-    nav ul {
-      width: 100%;
-      height: 65px;
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-    }
+.btn:hover {
+  background-color: aqua;
+}
 
-    nav a:hover {
-      color: greenyellow;
-    }
-    
-    .home {
-      width: 100%;
-      height: 675px;
-      background-color: black;
-      display: flex;
-      align-items: center;
-      /* justify-content: space-around; */
-    }
-    
- 
-    
-    .text1 {
-      font-size: 55px;
-      font-weight: 100;
-      color: white;
-    }
-    
-    .text2 {
-      font-size: 50px;
-      font-weight: 700;
-      color: white;
-    }
-    
-    .text3 {
-      font-size: 17px;
-      color: grey;
-    }
-    
-    .img-contant img {
-      width: 700px;
-    }
-    
-    .container {
-      width: 80%;
-      margin: 0 auto;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    body {
-      background-color: #333;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .portfolio {
-      margin: 50px 0;
-    }
-    .portfolio-title {
-      text-align: center;
-      width: 50%;
-      margin: 0 auto;
-      margin-bottom: 30px;
-    }
-    .portfolio-wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .portfolio-wrapper .portfolio-item {
-      width: 30%;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .portfolio-item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .portfolio-item a:hover {
-      color: yellowgreen;
-    }
-    
-    
-    .PROTFOLIE h1 {
-      text-align: center;
-      font-size: 17px;
-      color: white;
-    }
-    .PROTFOLIE span:hover{
-      color: greenyellow;
-    }
-    
-    
-    .PROTFOLIE .h4 h4{
-      padding: 0px;
-      display: inline;
-      font-size: 35px;
-      color: white;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    }
-    
-    .img1 img {
-      margin: 15px;
-      width: 100%;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .img1 span {
-      color: white;
-      font-size: 15px;
-      text-align: center;
-    }
-    
-    .ABOUT {
-      padding: 50px;
-      width: 100%;
-      background-color: rgb(44, 44, 44);
-      gap: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .text h1{
-      font-size: 30px;
-      color: white;
-    }
-    .ABOUT h1 {
-      color: white;
-      font-size: 35px;
-    }
-    
-    .ABOUT p {
-      color: grey;
-      font-size: 16px;
-    }
-    
-    .button button {
-      box-shadow: 0 0 5px green, 0 0 25px green;
-      width: 180px;
-      height: 50px;
-      background-color: green;
-      border-radius: 30px;
-      cursor: pointer;
-      border: none;
-    }
-    
-    .button button:hover {
-      box-shadow: 0 0 5px green,
-        0 0 25px green, 0 0 50px green,
-        0 0 100px green, 0 0 200px green;
-    
-    }
-    
-    .CONTANT {
-      padding: 20px;
-      width: 100%;
-      gap: 20px;
-      background-color: rgb(44, 44, 44);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    .CONTANT h1 {
-      font-size: 40px;
-      color: white;
-      text-align: center;
-    }
-    
-    .h1 h1 {
-      padding: 10px;
-      width: 100%;
-      font-size: 40px;
-      color: white;
-      background-color: rgb(44, 44, 44);
-    }
-    
-    input {
-      width: 500px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgb(75, 75, 75);
-    }
-    
-    textarea {
-      background-color: rgb(75, 75, 75);
-    }
-    
-    .button button {
-      box-shadow: 0 0 5px green, 0 0 25px green;
-      width: 140px;
-      height: 40px;
-      background-color: green;
-      border-radius: 30px;
-    }
-    
-    .button button:hover {
-      box-shadow: 0 0 5px green,
-        0 0 25px green, 0 0 50px green,
-        0 0 100px green, 0 0 200px green;
-    
-    }
-    
-    .text-numb {
-      margin: 20px;
-      padding: 20px;
-      margin-bottom: 5%;
-      margin-right: 7%;
-      display: block;
-      align-items: center;
-      justify-content: space-around;
-    }
-    
-    .text-numb span h3 {
-      font-size: 20px;
-      color: blue;
-    }
-    
-    .text-numb span p{
-      font-size: 15px;
-      color: white;
-    }
-    
-    .text-numb span p:hover {
-      color: greenyellow;
-    }
-    
-    .CONTANT h4 {
-      font-size: 40px;
-      color: white;
-    }
-    
-    .h1 h1{ 
-      padding: 20px;
-      margin-left: 37%;
-      font-size: 35px;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    
-    .form-ed {
-      padding: 40px;
-      display: inline-block;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: row;
-      }
+@media (max-width: 412px){
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px var(--shadow-color);
   }
+  
+  .navbar a {
+    padding: 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover {
+    color: greenyellow;
+  }
+  
+  .header-img img{
+    width: 400px;
+    height: 400px;
+    background-position: left;
+    margin-top: 70px;
+    color: #fff;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-wrapper .header-info {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  
+  .header-info span {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  
+  .header-info h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .header-info p {
+    font-size: 14px;
+    text-transform: uppercase;
+
+  }
+  
+  .header-wrapper .header-img {
+    width: 50%;
+    height: 90vh;
+  }
+  
+  .header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .portfolio h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .portfolio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .portfolio-wrapper .portfolio-item {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .portfolio-item img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .portfolio-item a:hover {
+    color: var(--primary-color);
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-img {
+    width: 55%;
+  }
+  
+  .about-img img {
+    width: 100%;
+  }
+  
+  .about-info {
+    width: 45%;
+    margin-left: 50px;
+    color: #fff;
+  }
+  
+  .about-info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .about-info p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  
+  #contact h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-wrapper .contact-form {
+    width: 60%;
+    margin-right: 50px;
+  }
+  
+  .contact-form h3 {
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .contact-form input:not(.btn),
+  .contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(93, 93, 153);
+    border: none;
+    margin-bottom: 16px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  .contact-form .btn {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  
+  .contact-wrapper .contact-details {
+    width: 40%;
+  }
+  
+  .contact-details h3 {
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .details-wrapper span {
+    color: #124374;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .details-wrapper a {
+    margin-bottom: 20px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .details-wrapper a:hover {
+    color: greenyellow;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  
+  
+  .btn {
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    padding: 12px 24px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: .3s;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: aqua;
+  }
+}
