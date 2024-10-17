@@ -327,18 +327,30 @@ section {
   }
   
   .header-info span {
+<<<<<<< HEAD
     font-size: 30px;
+=======
+    font-size: 20px;
+>>>>>>> 25d6ceabbc52e53363c17634485f74682a452ac0
     font-weight: 300;
   }
   
   .header-info h1 {
+<<<<<<< HEAD
     font-size: 30px;
+=======
+    font-size: 20px;
+>>>>>>> 25d6ceabbc52e53363c17634485f74682a452ac0
     font-weight: 800;
     margin-bottom: 10px;
   }
   
   .header-info p {
+<<<<<<< HEAD
     font-size: 10px;
+=======
+    font-size: 12px;
+>>>>>>> 25d6ceabbc52e53363c17634485f74682a452ac0
     text-transform: uppercase;
 
   }
