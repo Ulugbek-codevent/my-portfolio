@@ -278,19 +278,15 @@ section {
   background-color: aqua;
 }
 
-@media (max-width: 514px){
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px var(--shadow-color);
+@media (max-width: 435px){
+
+  body{
+    margin: 0 auto;
   }
   
   .navbar a {
     padding: 5px;
-    margin: 0 10px;
+    margin: 0 7px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: 0.3s;
@@ -403,7 +399,7 @@ section {
   }
   
   .about-info h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
   
